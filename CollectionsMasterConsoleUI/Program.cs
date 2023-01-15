@@ -5,6 +5,14 @@ namespace CollectionsMasterConsoleUI
 {
     class Program
     {
+        public static int randomNumber()
+        {
+            var r = new Random();
+            var number = r.Next(0, 50);
+
+            return number;
+
+        }
         static void Main(string[] args)
         {
             //TODO: Follow the steps provided in the comments under each region.
@@ -52,6 +60,9 @@ namespace CollectionsMasterConsoleUI
 
             Console.WriteLine("\n************End Arrays*************** \n");
             #endregion
+            int[] random = new int[50];
+
+
 
             #region Lists
             Console.WriteLine("************Start Lists**************");
